@@ -45,7 +45,7 @@
     </index>
    </folder>
   </table>
-  <table id="TAB11" populated="true" UUID="e7baaf38-5d34-48d0-b079-7d3031662d1d" name="remito" objectType="TABLE" physicalName="remito" >
+  <table id="TAB11" populated="true" UUID="e7baaf38-5d34-48d0-b079-7d3031662d1d" name="remitos" objectType="TABLE" physicalName="remitos" >
    <remarks></remarks>
    <folder id="FOLTAB111" populated="true" name="Columns" physicalName="Columns" type="1">
     <index id="IDX12" populated="true" UUID="97698367-3dbe-4d20-a1f6-5720b2265df5" clustered="false" name="idRemito" physicalName="idRemito" primaryKeyIndex="true" unique="false" >
@@ -68,13 +68,11 @@
    </relationship>
    <relationship id="REL18" populated="true" UUID="4bfcb02a-c42d-446a-ae31-902a0dc1a272" deferrability="7" deleteRule="3" fk-table-ref="TAB9" fkCardinality="7" identifying="true" name="proveedores_ordenes_compra_fk" physicalName="proveedores_ordenes_compra_fk" pk-table-ref="TAB7" pkCardinality="2" updateRule="3" >
    </relationship>
-   <relationship id="REL19" populated="true" UUID="28888177-93a7-497b-a847-1abaa82b8df8" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="proveedores_productos_fk" physicalName="proveedores_productos_fk" pk-table-ref="TAB7" pkCardinality="6" updateRule="3" >
+   <relationship id="REL19" populated="true" UUID="8cc35c76-1cb1-434d-943a-2494f8863737" deferrability="7" deleteRule="3" fk-table-ref="TAB11" fkCardinality="6" identifying="true" name="proveedores_remito_fk" physicalName="proveedores_remito_fk" pk-table-ref="TAB7" pkCardinality="2" updateRule="3" >
    </relationship>
-   <relationship id="REL20" populated="true" UUID="8cc35c76-1cb1-434d-943a-2494f8863737" deferrability="7" deleteRule="3" fk-table-ref="TAB11" fkCardinality="6" identifying="true" name="proveedores_remito_fk" physicalName="proveedores_remito_fk" pk-table-ref="TAB7" pkCardinality="2" updateRule="3" >
+   <relationship id="REL20" populated="true" UUID="3e6ab7a0-cb61-4226-b83a-b2d6ed27f838" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="6" identifying="true" name="remito_productos_fk" physicalName="remito_productos_fk" pk-table-ref="TAB11" pkCardinality="7" updateRule="3" >
    </relationship>
-   <relationship id="REL21" populated="true" UUID="3e6ab7a0-cb61-4226-b83a-b2d6ed27f838" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="6" identifying="true" name="remito_productos_fk" physicalName="remito_productos_fk" pk-table-ref="TAB11" pkCardinality="7" updateRule="3" >
-   </relationship>
-   <relationship id="REL22" populated="true" UUID="2dd13afb-b58d-41b9-8443-f58b760ddb0e" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="6" identifying="true" name="marcas_productos_fk" physicalName="marcas_productos_fk" pk-table-ref="TAB13" pkCardinality="2" updateRule="3" >
+   <relationship id="REL21" populated="true" UUID="2dd13afb-b58d-41b9-8443-f58b760ddb0e" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="6" identifying="true" name="marcas_productos_fk" physicalName="marcas_productos_fk" pk-table-ref="TAB13" pkCardinality="2" updateRule="3" >
    </relationship>
   </relationships>
  </target-database>
@@ -87,16 +85,15 @@
   <table-pane table-ref="TAB5" x="347" y="363" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB7" x="99" y="163" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB9" x="283" y="65" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB11" x="244" y="209" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB11" x="243" y="209" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB13" x="592" y="164" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-link relationship-ref="REL17" pkConnection="0.5" fkConnection="0.45454545454545453" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
   <table-link relationship-ref="REL15" pkConnection="0.4807692307692308" fkConnection="0.5" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
   <table-link relationship-ref="REL18" pkConnection="0.7230769230769231" fkConnection="0.32142857142857145" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
-  <table-link relationship-ref="REL19" pkConnection="0.4827586206896552" fkConnection="0.4827586206896552" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
-  <table-link relationship-ref="REL21" pkConnection="0.6206896551724138" fkConnection="1.0" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL20" pkConnection="0.6206896551724138" fkConnection="1.0" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
   <table-link relationship-ref="REL16" pkConnection="0.19230769230769232" fkConnection="0.75" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
-  <table-link relationship-ref="REL20" pkConnection="1.0" fkConnection="0.5862068965517241" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
-  <table-link relationship-ref="REL22" pkConnection="0.4827586206896552" fkConnection="0.5172413793103449" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL19" pkConnection="1.0" fkConnection="0.5862068965517241" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL21" pkConnection="0.4827586206896552" fkConnection="0.5172413793103449" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">

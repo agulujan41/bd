@@ -39,11 +39,11 @@
    </folder>
   </table>
   <relationships>
-   <relationship id="REL9" populated="true" UUID="c5d18d60-8182-4b33-b492-158f83a4ec1e" deferrability="7" deleteRule="3" fk-table-ref="TAB7" fkCardinality="7" identifying="true" name="empresas_de_transporte_envios_fk" physicalName="empresas_de_transporte_envios_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+   <relationship id="REL9" populated="true" UUID="2ee98d71-645e-4e20-98c3-59064045d6d6" deferrability="7" deleteRule="3" fk-table-ref="TAB7" fkCardinality="7" identifying="true" name="empresas_de_transporte_envios_fk" physicalName="empresas_de_transporte_envios_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
    </relationship>
-   <relationship id="REL10" populated="true" UUID="49e2c45a-f9ab-46ae-8d30-a9bdc442b03d" deferrability="7" deleteRule="3" fk-table-ref="TAB5" fkCardinality="7" identifying="true" name="proveedores_articulos_fk" physicalName="proveedores_articulos_fk" pk-table-ref="TAB3" pkCardinality="6" updateRule="3" >
+   <relationship id="REL10" populated="true" UUID="c48cc740-3d46-450c-87e1-585190de6c6a" deferrability="7" deleteRule="3" fk-table-ref="TAB7" fkCardinality="7" identifying="true" name="proveedores_envios_fk" physicalName="proveedores_envios_fk" pk-table-ref="TAB3" pkCardinality="2" updateRule="3" >
    </relationship>
-   <relationship id="REL11" populated="true" UUID="619b233e-9764-4ab4-8a72-423700b2d49e" deferrability="7" deleteRule="3" fk-table-ref="TAB5" fkCardinality="6" identifying="true" name="envios_articulos_fk" physicalName="envios_articulos_fk" pk-table-ref="TAB7" pkCardinality="7" updateRule="3" >
+   <relationship id="REL11" populated="true" UUID="71868cf9-76aa-43d5-bff2-582f195feb39" deferrability="7" deleteRule="3" fk-table-ref="TAB5" fkCardinality="6" identifying="true" name="envios_articulos_fk" physicalName="envios_articulos_fk" pk-table-ref="TAB7" pkCardinality="6" updateRule="3" >
    </relationship>
   </relationships>
  </target-database>
@@ -51,13 +51,13 @@
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
-  <table-pane table-ref="TAB1" x="437" y="167" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB3" x="298" y="249" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB5" x="477" y="347" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB7" x="634" y="249" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-link relationship-ref="REL9" pkConnection="0.672" fkConnection="0.0" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="36"/>
-  <table-link relationship-ref="REL10" pkConnection="0.6206896551724138" fkConnection="0.3793103448275862" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
-  <table-link relationship-ref="REL11" pkConnection="0.6206896551724138" fkConnection="0.3448275862068966" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-pane table-ref="TAB1" x="196" y="187" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB3" x="664" y="187" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB5" x="448" y="329" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB7" x="454" y="187" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL11" pkConnection="0.4857142857142857" fkConnection="0.5227272727272727" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL10" pkConnection="0.4827586206896552" fkConnection="0.4827586206896552" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL9" pkConnection="0.4827586206896552" fkConnection="0.4827586206896552" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">
